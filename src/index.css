@@ -1,0 +1,20 @@
+/* 1) Google Fonts (antes de qualquer coisa) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pompiere&display=swap');
+
+/* 2) Importa Tailwind (base, componentes e utilitários) */
+@import "tailwindcss";
+
+/* 3) Seu CSS customizado */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 4) Seu utilitário neon */
+@layer utilities {
+  .text-neon {
+    text-shadow:
+      0 0 4px rgba(255,107,0,0.8),
+      0 0 8px rgba(255,107,0,0.6),
+      0 0 12px rgba(255,107,0,0.4);
+  }
+}
