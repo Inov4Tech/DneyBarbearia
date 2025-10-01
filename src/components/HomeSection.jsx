@@ -113,7 +113,7 @@ export default function HomeSection() {
               
               {/* Primary CTA */}
               <a
-                href="#precos"
+                href="https://wa.me/5516992570702"
                 className="group relative bg-orange-500 text-white font-bold px-10 py-5 overflow-hidden transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-orange-500/25"
               >
                 {/* Button background effect */}
@@ -130,7 +130,7 @@ export default function HomeSection() {
 
               {/* Secondary CTA */}
               <a
-                href="#precos"
+                href="#servicos"
                 className="group relative text-white font-semibold px-10 py-5 border-2 border-white/30 hover:border-white transition-all duration-300 hover:bg-white/10"
               >
                 <span className="tracking-wider text-lg">VER PREÇOS</span>

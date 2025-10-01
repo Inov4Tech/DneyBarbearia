@@ -27,12 +27,12 @@ export default function Navbar() {
   const socialItems = [
     {
       label: 'Instagram',
-      href: 'https://instagram.com/seuPerfil',
+      href: 'https://www.instagram.com/dney.barbeiro/',
       icon: <FaInstagram size={27} className="inline-block" />,
     },
     {
       label: 'WhatsApp',
-      href: 'https://wa.me/5511999999999',
+      href: 'https://wa.me/5516992570702',
       icon: <FaWhatsapp size={27} className="inline-block" />,
     },
   ]

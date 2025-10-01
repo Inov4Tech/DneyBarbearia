@@ -8,12 +8,12 @@ export default function HorarioFuncionamento() {
   const sectionRef = useRef(null)
 
   const horarios = [
-    { dia: 'Segunda‑feira', hora: '08:00 às 18:00', start: 8, end: 18 },
-    { dia: 'Terça‑feira', hora: '08:00 às 18:00', start: 8, end: 18 },
-    { dia: 'Quarta‑feira', hora: '08:00 às 18:00', start: 8, end: 18 },
-    { dia: 'Quinta‑feira', hora: '08:00 às 18:00', start: 8, end: 18 },
-    { dia: 'Sexta‑feira', hora: '08:00 às 18:00', start: 8, end: 18 },
-    { dia: 'Sábado', hora: '08:00 às 18:00', start: 8, end: 18 },
+    { dia: 'Segunda‑feira', hora: '18:00 às 21:00', start: 18, end: 21 },
+    { dia: 'Terça‑feira', hora: '18:00 às 21:00', start: 18, end: 21 },
+    { dia: 'Quarta‑feira', hora: '18:00 às 21:00', start: 18, end: 21 },
+    { dia: 'Quinta‑feira', hora: '18:00 às 21:00', start: 18, end: 21 },
+    { dia: 'Sexta‑feira', hora: '18:00 às 21:00', start: 18, end: 21 },
+    { dia: 'Sábado', hora: '09:00 às 18:00', start: 9, end: 18 },
     { dia: 'Domingo', hora: 'FECHADO', start: null, end: null },
   ]
 
@@ -111,10 +111,10 @@ export default function HorarioFuncionamento() {
             
             {/* Main title */}
             <h2 className="font-montserrat text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              <span className="text-white">SEMPRE</span>
+              <span className="text-white">HORÁRIOS</span>
               <br />
               <span className="bg-gradient-to-r from-orange-500 via-orange-400 to-orange-500 bg-clip-text text-transparent">
-                DISPONÍVEL
+                PERSONALIZADOS
               </span>
             </h2>
             

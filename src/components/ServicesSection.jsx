@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { Scissors, Zap, Plus } from 'lucide-react'
+import { Scissors, Zap, Plus, Store } from 'lucide-react'
+import { FaProcedures, FaProductHunt } from 'react-icons/fa'
 
 export default function ServicesSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -31,7 +32,7 @@ export default function ServicesSection() {
       options: [
         { name: "Degradê", price: "25,00" },
         { name: "Navalhado", price: "30,00" },
-        { name: "Social", price: "20,00" },
+        { name: "Social", price: "25,00" },
         { name: "Infantil (<13 anos)", price: "20,00" }
       ]
     },
@@ -41,9 +42,9 @@ export default function ServicesSection() {
       subtitle: "Pacotes completos",
       icon: Zap,
       options: [
-        { name: "Degradê & Barba", price: "30,00" },
-        { name: "Navalhado & Barba", price: "35,00" },
-        { name: "Social & Barba", price: "25,00" }
+        { name: "Degradê & Barba", price: "35,00" },
+        { name: "Navalhado & Barba", price: "40,00" },
+        { name: "Social & Barba", price: "30,00" }
       ]
     },
     {
@@ -54,6 +55,19 @@ export default function ServicesSection() {
       options: [
         { name: "Barba", price: "15,00" },
         { name: "Sobrancelha", price: "10,00" }
+      ]
+    },
+    {
+      id: 4,
+      title: "PRODUTOS",
+      subtitle: "Cuidados para o seu estilo",
+      icon: Store,
+      options: [
+        { name: "Minoxidil Kirkland", price: "100,00" },
+        { name: "Balm para barba", price: "35,00" },
+        { name: "Grooming para cabelo", price: "35,00" },
+        { name: "Leave-in para cabelo", price: "35,00" },
+        { name: "Pomadas modeladoras", price: "35,00" }
       ]
     }
   ]
