@@ -14,7 +14,7 @@ export default function HorarioFuncionamento() {
     { dia: 'Quinta‑feira', hora: '18:00 às 21:00', start: 18, end: 21 },
     { dia: 'Sexta‑feira', hora: '18:00 às 21:00', start: 18, end: 21 },
     { dia: 'Sábado', hora: '09:00 às 18:00', start: 9, end: 18 },
-    { dia: 'Domingo', hora: 'FECHADO', start: null, end: null },
+    { dia: 'Domingo', hora: 'INDISPONÍVEL NO MOMENTO!', start: null, end: null },
   ]
 
   useEffect(() => {
@@ -137,7 +137,7 @@ export default function HorarioFuncionamento() {
               {/* Status indicator */}
               <div className="flex items-center gap-3">
                 <span className={`font-semibold ${isOpen ? 'text-green-400' : 'text-red-400'}`}>
-                  {isOpen ? 'ABERTO AGORA' : 'FECHADO'}
+                  {isOpen ? 'ABERTO AGORA' : 'FECHADO!'}
                 </span>
               </div>
               
@@ -181,7 +181,7 @@ export default function HorarioFuncionamento() {
               <div className="grid gap-4">
                 {horarios.map((item, index) => {
                   const isToday = item.dia === getCurrentDay()
-                  const isClosed = item.hora === 'FECHADO'
+                  const isClosed = item.hora === 'INDISPONÍVEL NO MOMENTO!'
                   
                   return (
                     <div 
@@ -279,8 +279,8 @@ export default function HorarioFuncionamento() {
                   </div>
                   <div className="text-left">
                     <p className="text-white/60 text-sm">Localização</p>
-                    <p className="text-white font-semibold text-lg">Av. Dona Tereza, 1444</p>
-                    <p className="text-white/50 text-sm">Esquina com a Rua Eduardo Silva</p>
+                    <p className="text-white font-semibold text-lg">Av. Dona Tereza, 919</p>
+                    <p className="text-white/50 text-sm">Barbearia Thony Martins & Dney Barbeiro</p>
                   </div>
                 </div>
               </div>

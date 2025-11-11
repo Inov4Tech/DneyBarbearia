@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { Scissors, Zap, Plus, Store } from 'lucide-react'
+import { Scissors, Zap, Plus, Store, Calendar, DollarSign } from 'lucide-react'
 import { FaProcedures, FaProductHunt } from 'react-icons/fa'
 
 export default function ServicesSection() {
@@ -30,8 +30,8 @@ export default function ServicesSection() {
       subtitle: "Estilos clássicos e modernos",
       icon: Scissors,
       options: [
-        { name: "Degradê", price: "25,00" },
-        { name: "Navalhado", price: "30,00" },
+        { name: "Degradê", price: "30,00" },
+        { name: "Navalhado", price: "35,00" },
         { name: "Social", price: "25,00" },
         { name: "Infantil (<13 anos)", price: "20,00" }
       ]
@@ -42,9 +42,10 @@ export default function ServicesSection() {
       subtitle: "Pacotes completos",
       icon: Zap,
       options: [
-        { name: "Degradê & Barba", price: "35,00" },
-        { name: "Navalhado & Barba", price: "40,00" },
-        { name: "Social & Barba", price: "30,00" }
+        { name: "Degradê & Barba", price: "40,00" },
+        { name: "Navalhado & Barba", price: "45,00" },
+        { name: "Social & Barba", price: "35,00" },
+        { name: "Sobrancelha", price: "+5 NO VALOR" }
       ]
     },
     {
@@ -53,8 +54,9 @@ export default function ServicesSection() {
       subtitle: "Acabamentos especiais",
       icon: Plus,
       options: [
-        { name: "Barba", price: "15,00" },
-        { name: "Sobrancelha", price: "10,00" }
+        { name: "Barba", price: "20,00" },
+        { name: "Sobrancelha", price: "10,00" },
+        { name: "Pezinho", price: "15,00" }
       ]
     },
     {
@@ -65,9 +67,35 @@ export default function ServicesSection() {
       options: [
         { name: "Minoxidil Kirkland", price: "100,00" },
         { name: "Balm para barba", price: "35,00" },
-        { name: "Grooming para cabelo", price: "35,00" },
-        { name: "Leave-in para cabelo", price: "35,00" },
-        { name: "Pomadas modeladoras", price: "35,00" }
+        { name: "Grooming para cabelo", price: "45,00" },
+        { name: "Leave-in para cabelo", price: "45,00" },
+        { name: "Pomadas modeladoras", price: "15,00" }
+      ]
+    },
+      {
+      id: 5,
+      title: "PACOTE MENSAL",
+      subtitle: "4x POR MÊS",
+      icon: DollarSign,
+      options: [
+        { name: "CABELO", price: "90" },
+        { name: "CABELO E BARBA", price: "120" },
+        { name: "NAVALHADO", price: "110" },
+        { name: "NAVALHADO E BARBA", price: "150" },
+        { name: "SOBRANCELHA", price: "BRINDE!" }
+      ]
+    },
+    {
+      id: 6,
+      title: "PACOTE SEMANAL",
+      subtitle: "2x POR MÊS",
+      icon: Calendar,
+      options: [
+        { name: "CABELO", price: "50" },
+        { name: "CABELO E BARBA", price: "70" },
+        { name: "NAVALHADO", price: "60" },
+        { name: "NAVALHADO E BARBA", price: "80" },
+        { name: "SOBRANCELHA", price: "+5 NO VALOR" }
       ]
     }
   ]
