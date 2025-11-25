@@ -99,7 +99,7 @@ export default function HomeSection() {
                 : '-translate-x-12 opacity-0'
             }`} style={{ transitionDelay: '1000ms' }}>
               <p className="text-white/70 text-lg md:text-xl leading-relaxed font-light">
-                Eleve sua presença com cortes precision e styling contemporâneo. 
+                Eleve sua presença com cortes de precisão e estilo contemporâneo. 
                 Nossa expertise transforma não apenas seu visual, mas sua confiança.
               </p>
             </div>
@@ -168,15 +168,6 @@ export default function HomeSection() {
           </div>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="flex justify-center">
-          <div className="flex flex-col items-center text-white/60 hover:text-white/80 transition-colors duration-300 cursor-pointer">
-            <span className="text-sm mb-3 font-light tracking-wide">Role para baixo</span>
-            <div className="w-6 h-10 border-2 border-white/40 rounded-full flex justify-center hover:border-orange-500/60 transition-colors duration-300">
-              <div className="w-1 h-3 bg-white/60 rounded-full mt-2 animate-bounce" />
-            </div>
-          </div>
-        </div>
       </div>
 
       <style jsx>{`
